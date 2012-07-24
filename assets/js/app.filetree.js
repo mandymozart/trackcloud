@@ -12,7 +12,7 @@ $(document).ready( function() {
 		loadMessage: 'Loading...', 
 		multiFolder: false 
 	}, function(file) { 
-    		var template = Handlebars.compile($("#playerTemplate").html());
+    	var template = Handlebars.compile($("#playerTemplate").html());
 		Handlebars.registerPartial("header", $("#headerPartial").html());
 		Handlebars.registerPartial("audio", $("#audioPartial").html());	
 		Handlebars.registerPartial("waveform", $("#waveformPartial").html());	

@@ -29,9 +29,9 @@
         this.each(function() {
             $(this).wrap('<div class="simple-player-container"' + 
                          ' />').parent().prepend(
-		'<div class="progressbar-wrapper" style="display: inline-block; cursor: pointer; width:' + config.progressbarWidth + ';">' + 
+		'<div class="progress progress-warning active progressbar-wrapper" style="display: inline-block; cursor: pointer; width:' + config.progressbarWidth + ';">' +
                       '<span style="display: block; background-color: ' + config.progressbarBGColor + '; width: 100%; ">' + 
-                      '<span class="progressbar" style="display: block; background-color: ' + config.progressbarColor +
+                      '<span class="bar progressbar" style="display: block; background-color: ' + config.progressbarColor +
                         '; height: ' + config.progressbarHeight + '; width: 0%; ">' +
                       '</span></span>' + 
                 '</div>' +				 
