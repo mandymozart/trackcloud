@@ -1,0 +1,5 @@
+    /* --- icon-sprites --- */
+.icon-labs {
+    background-image: url('../img/shalomsalonlabs-icon.png');
+    background-position: 0px 0px; // reset bootstrap sprites offset
+}

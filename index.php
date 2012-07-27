@@ -4,12 +4,15 @@
         <meta charset="utf-8">
         <title>TrackCloud &trade; by Shalom Salon</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="">
-        <meta name="author" content="">
+        <meta name="description" content="Pre-Alpha track collaboration tool">
+        <meta name="author" content="Shalom Salon Labs">
+        <link rel="shortcut icon" href="assets/ico/favicon.ico">
         <link href="assets/css/jqueryFileTree.css" rel="stylesheet" type="text/css" media="screen" />
         <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen" />
         <link href="assets/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css" media="screen" />
         <link href="assets/css/trackcloud.css" rel="stylesheet" type="text/css" media="screen" />
+        <link href="assets/css/trackcloud.icons.css" rel="stylesheet" type="text/css" media="screen" />
+        <link href="assets/css/trackcloud.player.css" rel="stylesheet" type="text/css" media="screen" />
 
     </head>
 	
@@ -37,18 +40,14 @@
             <hr>
             <footer>
                 <p>
-                    Copyright &copy; Shalom Salon Labs 2012 / <a data-toggle="modal" href="#modalAbout">About</a>
+                    Copyright &copy; <span class="icon-labs"></span> Shalom Salon Labs 2012 / <a data-toggle="modal" href="#modalAbout">About</a>
                 </p>
                 <hr/>
                 <div>
                     <span class="label label-info"> Developer Tools</span> -
                     <a data-toggle="modal" href="#modalTree">Filebrowser</a> /
-                    <a data-toggle="modal" href="#modalUpload">Upload</a>
-                </div>
-                <div>
-                    <span class="label label-inverse"> Debugger </span>
-                    <br>
-                    <code id="debugger"></code>
+                    <a data-toggle="modal" href="#modalUpload">Upload</a> /
+                    <a data-toggle="modal" href="#modalDebugger">Debugging Console</a>
                 </div>
             </footer>
 
@@ -87,6 +86,59 @@
             </div>
         </div>
 
+            <!-- About -->
+        <div class="modal hide" id="modalAbout">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h3>About TrackCloud &trade; <span class="label label-notice"> pre-alpha! </span></h3>
+            </div>
+            <div class="modal-body">
+                <h4>What's the intend of the Labs?</h4>
+                <p>
+                    This application is a development of Shalom Salon Labs, as part of the Shalom Salon Network.
+                    It is based on the needs of the terms of business of a net-label, that supports both,
+                    production and publication of audio (and other media). Shalom Salon Labs is not giving any rights to
+                    duplicate or use any of the development efforts. Our intend is purely to capitalize on inventions of
+                    the lab, to keep our publication interest a float with the necessary support to our artists. These
+                    considerations come from the unavailability of a free music culture that will actually reinvest in
+                    it's contribution. Please, we are not asking for donations, but the acknowledgement of projects like
+                    this.<br />
+                    <br />
+                    Get involved into our software projects, become a member of the editorial staff or submit your content
+                    in existing remix projects, compilations, events, or
+                    even individual releases through one of our representatives.<br /><br />
+                    We beliefe there is even a formula behind the existence of god!
+                </p>
+                <h4>Current Demand</h4>
+                <p>If you anticipate with our development, we highly motive you to join our team at this early stage.</p>
+                <ul>
+                    <li>Backend-Developer (Codeigniter, PHP, Java, Github)</li>
+                    <li>Frontend-Developer (jQuery, HTML5, Github)</li>
+                    <li>Interface Designer</li>
+                    <li>Administrator (Blogspot, Wordpress)</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="btn" data-dismiss="modal">Close</a>
+            </div>
+        </div>
+
+        <!-- About -->
+        <div class="modal hide" id="modalDebugger">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h3>Debugging Console</h3>
+            </div>
+            <div class="modal-body">
+                <span class="label label-inverse"> Debugger </span>
+                <br>
+                <pre class="prettyprint linenums" id="debugger"></pre>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="btn" data-dismiss="modal">Close</a>
+            </div>
+        </div>
+
         <!-- Templates/Handlebars/Mustache -->
         <script id="listTemplate" type="text/x-handlebars-template">
             <table class="table" id="tracksList">
@@ -110,6 +162,7 @@
                 {{> waveform}}
                 {{> audio}}
             {{/audio}}
+            <hr/>
             {{> download}}
         </script>
 
@@ -129,11 +182,7 @@
         </script>
 
         <script id="downloadPartial" type="text/x-handlebars-template">
-            Share it!
-            <div class="input-append">
-                <input class="span2" id="appendedInputButton" size="16" type="text" value="{{file.path}}" />
-                <a href="{{file.path}}" class="btn btn-primary">​Copy Link​</a>​
-            </div>​
+            Share it! <a href="{{file.path}}" class="btn btn-primary">​Copy Link​</a>​
         </script>
 
         <script src="assets/js/jquery-1.7.2.min.js" type="text/javascript"></script>
