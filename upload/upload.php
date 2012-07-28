@@ -1,6 +1,6 @@
 <?php
 /**
- * upload.php
+ * helper.upload.json.php
  *
  * Copyright 2009, Moxiecode Systems AB
  * Released under GPL License.

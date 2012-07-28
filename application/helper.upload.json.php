@@ -1,6 +1,6 @@
 <?php
 /**
- * upload.php
+ * helper.upload.json.php
  *
  * Copyright 2009, Moxiecode Systems AB
  * Released under GPL License.
@@ -17,8 +17,8 @@ header("Cache-Control: post-check=0, pre-check=0", false);
 header("Pragma: no-cache");
 
 // Settings
-$targetDir = ini_get("upload_tmp_dir") . DIRECTORY_SEPARATOR . "plupload";
-//$targetDir = 'uploads';
+// $targetDir = ini_get("upload_tmp_dir") . DIRECTORY_SEPARATOR . "plupload";
+$targetDir = '../../root/temp';
 
 $cleanupTargetDir = true; // Remove old files
 $maxFileAge = 5 * 3600; // Temp file age in seconds

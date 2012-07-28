@@ -8,7 +8,7 @@
 		font-family:Verdana, Geneva, sans-serif;
 		font-size:13px;
 		color:#333;
-		background:url(bg.jpg);
+		background:url(../plupload/examples/bg.jpg);
 	}
 </style>
 </head>
