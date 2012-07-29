@@ -13,7 +13,8 @@
         <link href="assets/css/trackcloud.css" rel="stylesheet" type="text/css" media="screen" />
         <link href="assets/css/trackcloud.icons.css" rel="stylesheet" type="text/css" media="screen" />
         <link href="assets/css/trackcloud.player.css" rel="stylesheet" type="text/css" media="screen" />
-        <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/themes/base/jquery-ui.css" type="text/css" />
+        <link href="assets/css/trackcloud.upload.css" rel="stylesheet" type="text/css" media="screen" />
+        <link href="assets/css/trackcloud.header.css" rel="stylesheet" type="text/css" media="screen" />
 
     </head>
 	
@@ -29,13 +30,19 @@
                 </div><!--/span-->
                 <div class="span6">
                     <div id="headerView">
-                        <h1>TrackCloud &trade;</h1>
-                        <p>A place to share mixes and request remixes. Select track from Menu and load file info's here. </p>
+                        <h1>TrackCloud&trade; <strong>A place for sharing mixes and remix request!</strong>
+                        <p>Select track from Menu and load file info's here. </p>
                     </div>
                     <div id="playerView"></div>
                     <hr />
-                    <p><span class="label label-warning">24bit WAV Remarks</span> The native HTML5-Player does not yet support
-                    24bit WAV playback. You will have to download them first. Waveforms will be displayed over-saturated.</p>
+                    <p class="alert alert-warning"><strong>24bit WAV Remarks!</strong>
+                        <ul>
+                            <li>Waveforms will be displayed over-saturated</li>
+                            <li>The native HTML5-Player does not yet support 24bit WAV playback. Download files
+                                and listen offline for now. </li>
+                            <li>Conversion tools won't work until funding drops in!</li>
+                        </ul>
+                    </p>
                 </div><!--/span-->
             </div><!--/row-->
             <hr>
