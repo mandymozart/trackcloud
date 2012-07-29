@@ -30,7 +30,7 @@
                 </div><!--/span-->
                 <div class="span6">
                     <div id="headerView">
-                        <h1>TrackCloud&trade; <strong>A place for sharing mixes and remix request!</strong>
+                        <h1>TrackCloud&trade; <small>A place for sharing mixes and remix request!</small></h1>
                         <p>Select track from Menu and load file info's here. </p>
                     </div>
                     <div id="playerView"></div>
