@@ -223,7 +223,10 @@
         <script src="assets/js/handlebars-1.0.0.js" type="text/javascript"></script>
         <script src="assets/js/mustache.js" type="text/javascript"></script>
 
-                <!-- upload-widget -->
+            <!-- Modal Handling for Dialogs -->
+        <script src="assets/js/bootbox.min.js" type="text/javascript"></script>
+
+            <!-- upload-widget -->
         <script type="text/javascript" src="assets/js/plupload.min.js"></script>
         <script type="text/javascript" src="assets/js/plupload.html4.min.js"></script>
         <script type="text/javascript" src="assets/js/plupload.html5.min.js"></script>
