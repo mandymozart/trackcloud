@@ -25,7 +25,8 @@ $(document).ready( function() {
             $.each (data, function(key,val){
                 $.each (val, function (k,v) {
                     track[k] = v;
-                    track[k]['audio'] = true;
+                    // track[k]['audio'] = true;
+                    // json has to be changed to fit tracklist with audioPartial
                 });
                 i++;
                 $('#tracksList').append(template(track));
