@@ -9,7 +9,6 @@ $('#folderView').ready( function() {
         var template = Handlebars.compile($("#playerTemplate").html());
         Handlebars.registerPartial("header", $("#headerPartial").html());
         Handlebars.registerPartial("audio", $("#audioPartial").html());
-        Handlebars.registerPartial("waveform", $("#waveformPartial").html());
         Handlebars.registerPartial("download", $("#downloadPartial").html());
         var file_arr = file.split('/');
         var a = new Array('trackcloud/..'); // dirty fix for root offset
@@ -28,10 +27,6 @@ $('#folderView').ready( function() {
         $('#playerView').html(template(data));
         /* Player */
         var settings = {
-            progressbarWidth: '100%',
-            progressbarHeight: '50px',
-            progressbarColor: '#000',
-            progressbarBGColor: '#eeeeee',
             defaultVolume: 0.8
         };
         $('.player').player(settings);
