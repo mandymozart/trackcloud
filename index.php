@@ -79,14 +79,14 @@
             </div>
             <div class="modal-body">
                 <p>The uploader let's you share you project and all the individual tracks to your cloud. Select up to 8 files for upload. <span class="label label-warning"> WAV format only </span> </p>
-                <div id="walkThrough" class="well well-small">
-                    <h4 class="pull-right"><span class="label label-info">Walk-Through</span></h4>
-                    <p id="walkThroughBody">
+                <div id="walkThrough" class="alert alert-info">
+                    <strong>Walk-Through</strong>
+                    <span id="walkThroughBody">
                         Runtime error!
-                    </p>
+                    </span>
                 </div>
                 <div id="uploadView">
-                    <div id="uploadList">
+                    <div id="uploadList" class="well">
                     </div>
                 </div>
             </div>
