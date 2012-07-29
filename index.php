@@ -220,6 +220,7 @@
 
             <!-- Scaffolding -->
         <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="assets/js/bootstrap-transition.js" type="text/javascript"></script>
         <script src="assets/js/handlebars-1.0.0.js" type="text/javascript"></script>
         <script src="assets/js/mustache.js" type="text/javascript"></script>
 
