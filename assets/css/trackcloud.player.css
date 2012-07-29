@@ -1,14 +1,49 @@
-/* --- player-style --- */
+/* --- view-style --- */
+.playerWrapper {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    border-radius: 3px;
+}
 
+.playerControls {
+    padding:2px;
+    float:right;
+}
 
+.waveform,
+.playerProgressWrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background:none;
+}
+
+.playerProgressBar {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+    border-radius: 3px;
+}
+.
+/* --- player-style --*/
 .waveform, .trk-waveform {
     width: 100%;
     height: 50px;
 }
 
-.table {
+.tracktable {
     width:100%;
+    border:0;
 }
+
+.tracktable > td {
+    border:0px;
+}
+
+
 
 div.track { position: relative; }
 div.track img { z-index: 1; }

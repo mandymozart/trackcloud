@@ -23,26 +23,27 @@
         <div class="container-fluid">
             <div class="row-fluid">
                 <div class="span6">
-                    <div class="well sidebar-nav">
-                        <h6>Tracks</h6>
+                    <div class="well tracks">
                         <div id="folderView"></div>
                     </div><!--/.well -->
                 </div><!--/span-->
                 <div class="span6">
                     <div id="headerView">
-                        <h1>TrackCloud&trade; <small>A place for sharing mixes and remix request!</small></h1>
+                        <h1>TrackCloud&trade; <small>Share & Request Remixes!</small></h1>
                         <p>Select track from Menu and load file info's here. </p>
                     </div>
                     <div id="playerView"></div>
                     <hr />
-                    <p class="alert alert-warning"><strong>24bit WAV Remarks!</strong>
+                    <div class="alert alert-warning">
+                        <button class="close" data-dismiss="alert">×</button>
+                        <strong>24bit WAV Remarks!</strong>
                         <ul>
                             <li>Waveforms will be displayed over-saturated</li>
                             <li>The native HTML5-Player does not yet support 24bit WAV playback. Download files
                                 and listen offline for now. </li>
                             <li>Conversion tools won't work until funding drops in!</li>
                         </ul>
-                    </p>
+                    </div>
                 </div><!--/span-->
             </div><!--/row-->
             <hr>
@@ -173,13 +174,16 @@
 
         <!-- Templates/Handlebars/Mustache -->
         <script id="listTemplate" type="text/x-handlebars-template">
-            <table class="table" id="tracksList">
+            <table class="tracktable" id="tracksList">
             </table>
         </script>
 
         <script id="itemTemplate" type="text/x-handlebars-template">
             <tr>
                 <td>
+                    {{#audio}}
+                        {{> audio}}
+                    {{/audio}}
                     <div class="track">
                         <a rel="{{filepath}}" class="track-link"><img src="{{waveform}}" class="trk-waveform" /></a>
                         <div class="waveform-label">{{filename}} ({{bitmode}}Bit - {{playtime}})</div>
@@ -191,7 +195,6 @@
         <script id="playerTemplate" type="text/x-handlebars-template">
             {{> header}}
             {{#audio}}
-                {{> waveform}}
                 {{> audio}}
             {{/audio}}
             <hr/>
@@ -207,10 +210,6 @@
             Your browser does not support the audio tag.
             SWF Player Object can be added as fallback.
             </audio>
-        </script>
-
-        <script id="waveformPartial" type="text/x-handlebars-template">
-            <img src="{{file.waveform}}" class="waveform" />
         </script>
 
         <script id="downloadPartial" type="text/x-handlebars-template">

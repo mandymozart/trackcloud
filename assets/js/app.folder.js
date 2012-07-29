@@ -19,11 +19,13 @@ $(document).ready( function() {
             $('#debugger').append(' > attached list');
             // interate through returns
             var template = Handlebars.compile($("#itemTemplate").html());
+            Handlebars.registerPartial($("audioPartial").html());
             var i = 0;
             var track = new Object();
             $.each (data, function(key,val){
                 $.each (val, function (k,v) {
                     track[k] = v;
+                    track[k]['audio'] = true;
                 });
                 i++;
                 $('#tracksList').append(template(track));
