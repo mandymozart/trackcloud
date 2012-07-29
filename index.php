@@ -231,6 +231,7 @@
             <!-- App:last to make sure all runtimes are executed before -->
         <script src="assets/js/app.js" type="text/javascript"></script>
         <script src="assets/js/app.hasher.js" type="text/javascript"></script>
+        <script src="assets/js/app.folder.js" type="text/javascript"></script>
         <script src="assets/js/app.filetree.js" type="text/javascript"></script>
         <script src="assets/js/app.player.js" type="text/javascript"></script>
         <script src="assets/js/app.upload.js" type="text/javascript"></script>
