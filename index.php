@@ -57,7 +57,7 @@
         <!-- Modals -->
 
             <!-- FileTree -->
-        <div class="modal hide" id="modalTree">
+        <div class="modal hide fade" id="modalTree">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">×</button>
                 <h3>Filebrowser</h3>
@@ -72,7 +72,7 @@
         </div>
 
             <!-- Upload -->
-        <div class="modal hide" id="modalUpload">
+        <div class="modal hide fade" id="modalUpload">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">×</button>
                 <h3>Upload</h3>
@@ -98,7 +98,7 @@
         </div>
 
             <!-- About -->
-        <div class="modal hide" id="modalAbout">
+        <div class="modal hide fade" id="modalAbout">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">×</button>
                 <h3><span class="icon-labs"></span> Shalom Salon Labs</h3>
@@ -132,7 +132,7 @@
         </div>
 
         <!-- About -->
-        <div class="modal hide" id="modalAboutTrackcloud">
+        <div class="modal hide fade" id="modalAboutTrackcloud">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">×</button>
                 <h3>About TrackCloud &trade; <span class="label label-notice"> pre-alpha! </span></h3>
@@ -149,7 +149,7 @@
             </div>
         </div>
             <!-- Debugger -->
-        <div class="modal hide" id="modalDebugger">
+        <div class="modal hide fade" id="modalDebugger">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">×</button>
                 <h3>Debugging Console</h3>
@@ -220,7 +220,6 @@
 
             <!-- Scaffolding -->
         <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
-        <script src="assets/js/bootstrap-transition.js" type="text/javascript"></script>
         <script src="assets/js/handlebars-1.0.0.js" type="text/javascript"></script>
         <script src="assets/js/mustache.js" type="text/javascript"></script>
 
