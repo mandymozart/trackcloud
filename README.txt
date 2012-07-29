@@ -18,7 +18,7 @@ TODO:
 
 Backlog:
 
--
+- PDF ProducerNotes
 - Integrate playerView into tracksList
 - All Tracks SYNC_playback (Master Time)
 - Song*Set Modi:
