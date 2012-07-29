@@ -197,8 +197,8 @@
 
 define('ZOOM',10);                 // Image is drawn ZOOM times bigger and then resized
 define('ACCURACY',100);           // Data point is the average of ACCURACY points in the data block
-define('WIDTH', 400);             // image width
-define('HEIGHT',40);             // image heigt
+define('WIDTH', 800);             // image width
+define('HEIGHT',50);             // image heigt
 define('FOREGROUND', '#000000');
 define('BACKGROUND', '');  //  blank for transparent
 
